@@ -10,5 +10,17 @@
         background-color: black;
         color: white;
     }
+    span {
+        display: inline-flex;
+    }
+    img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    #next-to-icon {
+        padding-left: 30px;
+    }
 </style>
-<h1>{{ uname }}</h1>
+<span><img src = "{{ pfp }}" width="100" height="100"> </img><h1 id = "next-to-icon">{{ uname }}</h1><h1> ({{ cycles }})</h1></span>
